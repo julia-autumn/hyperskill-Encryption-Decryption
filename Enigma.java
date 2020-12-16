@@ -1,12 +1,14 @@
 package encryptdecrypt;
 
 public class Enigma {
+    private String strOperation;
     private String strMessage;
     private int nKey;
 
     public Enigma(Message message) {
         this.strMessage = message.getMessage();
         this.nKey = message.getKey();
+        this.strOperation = message.getOperation();
     }
 
     public String encryptMessage() {
